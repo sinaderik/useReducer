@@ -1,4 +1,5 @@
 import React from 'react'
+import Todos from './Todos/Todos'
 import { useReducer } from 'react'
 
 const ACTION = {
@@ -33,6 +34,8 @@ export default function App() {
         <h2>count: {state.count}</h2>
         <button onClick={increment}>increment</button><br /><br />
         <button onClick={decrement}>decrement</button>
+        <hr />
+        <Todos />
     </div>
   )
 }
